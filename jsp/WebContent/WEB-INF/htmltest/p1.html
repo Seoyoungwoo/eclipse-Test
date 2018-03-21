@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+	table,tr,td {
+	border : 2px solid blue}
+	th{
+	background-color : yellow}
+</style>
+</head>
+<body>
+	<h2>직원정보입력</h2>
+	<hr>
+	<form action="pro.html"method="get">
+	<table>
+	<tr>
+		<th>이름</th>
+		<td><input type="text" id="name"></td>
+	</tr>
+	<tr>
+		<th>직급</th>
+		<td>
+				<input type = "checkbox" name = "rank" />부장
+				<input type = "checkbox" name = "rank" />과장
+		</td>
+	</tr>
+	<tr>
+		<th>부서</th>
+		<td>
+				<select name = "department">
+					<option value = "division">총무부</option>
+					<option value = "division2">경리부</option>
+				</select>
+		</td>
+	</tr>
+	<tr>
+		<th>입사연월일</th>
+		<td>
+					<input type = "date" min = "2000-01-01" max = "2020-12-31	" name = "date" step = "7">
+    </td>
+	</tr>
+	<tr>
+		<th>사진업로드</th>
+		<td><input type="file" name="profile"></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<input type="submit" value="입력완료">
+			<input type="reset" value="재작성">
+		</td>
+	</tr>
+		</table>
+	</form>
+</body>
+</html>
